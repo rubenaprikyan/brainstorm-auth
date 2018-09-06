@@ -35,7 +35,7 @@
   ````  
 ## Step 5
 ````
-$ npm || yarn start
+$ npm  start
 
 send POST request http:// localhost:4000/v1/users/login where request body is   {
                                                                                     "email": "brainstorm-test-<number>@mailinator.com"
