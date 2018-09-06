@@ -38,7 +38,7 @@
 $ npm || yarn start
 
 send POST request http:// localhost:4000/v1/users/login where request body is   {
-                                                                                    "email": "brainstorm-tes-i@mailinator.com"
+                                                                                    "email": "brainstorm-test-<number>@mailinator.com"
                                                                                     "password": "hunter"                             
                                                                                 }
 send GET request http://localhost:400/v1/users/me Where authorization bearer of the header is a previous action, a responsed token
