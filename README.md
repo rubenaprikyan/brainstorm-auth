@@ -12,10 +12,10 @@
    ```json
    {
     "db": {
-      "host": "<db host>", //set our db host
-      "database": "",      //set your db name
-      "username": "",      // set username
-      "password": "",      //set password
+      "host": "<set our db host>", 
+      "database": "<set your db name>",      //
+      "username": "<set username>", 
+      "password": "<set password>",
       "dialect": "postgres",
       "logging" : false
     },
@@ -24,7 +24,23 @@
       "url": "http://<your host>" 
     },
     "bstoken": {
-      "secret": "rxPhglGJWPlOW596" //you can change or not 
+      "secret": "rxPhglGJWPlOW596"
     }
   }
    ```
+## Step 4
+  ````
+  $ npm migrate-up
+  $ npm seed-up  
+  ````  
+## Step 5
+````
+$ npm || yarn start
+
+send POST request http:// localhost:4000/v1/users/login where request body is   {
+                                                                                    "email": "brainstorm-tes-i@mailinator.com"
+                                                                                    "password": "hunter"                             
+                                                                                }
+send GET request http://localhost:400/v1/users/me Where authorization bearer of the header is a previous action, a responsed token
+
+````     
