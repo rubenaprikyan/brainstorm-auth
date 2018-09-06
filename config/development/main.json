@@ -1,0 +1,17 @@
+{
+  "db": {
+    "host": "<your db host>",
+    "database": "<your db>",
+    "username": "<your passeord>",
+    "password": "<your password>",
+    "dialect": "postgres",
+    "logging" : false
+  },
+  "server": {
+    "port": 4000,
+    "url": "http://<your host>"
+  },
+  "bstoken": {
+    "secret": "rxPhglGJWPlOW596"   
+  }
+}

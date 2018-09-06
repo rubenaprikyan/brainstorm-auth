@@ -1,0 +1,40 @@
+{
+  "name": "brainstorm-auth",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js",
+    "migrate-up": "sequelize db:migrate",
+    "migrate-down": "sequelize db:migrate:undo:all",
+    "seed-up": "sequelize db:seed:all",
+    "seed-down": "sequelize db:seed:undo:all"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rubenaprikyan/brainstorm-auth.git"
+  },
+  "author": "Ruben Aprikyan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rubenaprikyan/brainstorm-auth/issues"
+  },
+  "homepage": "https://github.com/rubenaprikyan/brainstorm-auth#readme",
+  "dependencies": {
+    "bcrypt": "^3.0.0",
+    "brainstormedauth": "0.0.1",
+    "brainstormedtoken": "0.0.1",
+    "faker": "^4.1.0",
+    "koa": "^2.5.2",
+    "koa-body": "^4.0.4",
+    "koa-respond": "^1.0.1",
+    "koa-router": "^7.4.0",
+    "lodash": "^4.17.10",
+    "nconf": "^0.10.0",
+    "passport": "^0.4.0",
+    "pg": "^7.4.3",
+    "randomstring": "^1.1.5",
+    "sequelize": "^4.38.0"
+  }
+}
