@@ -13,14 +13,14 @@
    {
     "db": {
       "host": "<set our db host>", 
-      "database": "<set your db name>",      //
+      "database": "<set your db name>",      
       "username": "<set username>", 
       "password": "<set password>",
       "dialect": "postgres",
       "logging" : false
     },
     "server": {
-      "port": "<port>",    //set application port
+      "port": "<port>",    
       "url": "http://<your host>" 
     },
     "bstoken": {
