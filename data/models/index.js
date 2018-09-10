@@ -22,25 +22,6 @@ fs.readdirSync(__dirname)
         db[model.name] = model;
     });
 
-Object.keys(db).forEach(modelName => {
-    if (db[modelName].associate) {
-        db[modelName].associate(db);
-    }
-
-    if (db[modelName].addScopes) {
-        db[modelName].addScopes(db);
-    }
-
-    db[modelName]['generateNestedQuery'] = query => {
-        return sequelize.literal(
-            `(${sequelize
-                .getQueryInterface()
-                .QueryGenerator.selectQuery(db[modelName].getTableName(), query)
-                .slice(0, -1)})`
-        );
-    };
-});
-
 db.generateSearchQuery = (string, fields = ['username', 'firstName', 'lastName']) => {
     const permArr = [];
     const newArray = [];
